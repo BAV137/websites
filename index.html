@@ -3,53 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nehtový specialista</title>
+    <title>Nehtový Specialista</title>
     <style>
-        * {
-            margin: 0;
+        html {
+            background-color: rgb(100, 100, 100);
         }
-        
-        body {
-            background-color: aliceblue;
 
+        body {
+            background-color: rgb(50, 150, 200);
+            margin: 0;
             height: 100dvh;
+            width: 100vw;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
+            justify-content: space-between;
             align-items: center;
         }
 
-        .cont {
-            background-color: gold;
-            color: black;
-
-            text-align: center;
-            text-decoration: none;
+        /* Общий стиль для всех ссылок-контейнеров */
+        a {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: inherit; /* Цвет текста наследуется */
+            display: flex; /* Контейнер становится блочным */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 30vh;
+            border-radius: 10px; /* Скругление краев */
+            transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
         }
 
+        /* Индивидуальные стили для разных блоков */
+        .top {
+            background-color: greenyellow;
+        }
+
+        .logo {
+            background-color: gold;
+        }
+
+        .bot {
+            background-color: lightcoral;
+        }
+
+        /* Эффекты при наведении */
+        a:hover {
+            transform: scale(1.05); /* Увеличение контейнера */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+        }
+
+        /* Текст */
+        h1, h3, h4 {
+            margin: 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <!-- Службы -->
-    <a href="#" class="cont sluzby">
-        <h2>SLUŽBY-h2</h2>
+    <!-- Верхняя кнопка -->
+    <a href="https://bumpix.net/alla" class="top">
+        <h1>služby</h1>
+        <h4>nabídka, rezervace termínu...</h4>
     </a>
 
-    <!-- Лого -->
-    <a href="#" class="cont logo">
-        <h1>BYSTROVÁ-h1</h1>
-        <h4>NEHTOVÝ SPECIALISTA-h4</h4>
+    <!-- Центральный блок -->
+    <a href="#" class="logo">
+        <h1>Bystrová</h1>
+        <h3>nehtový specialista</h3>
     </a>
-    <!-- Test -->
-    <a href="#" class="cont test">
-        <p>Koryaka samiy bistrushniy mur-chaka-P</p>
-        Chibaka myau-chaka-empty
+    
+    <!-- Нижняя кнопка -->
+    <a href="#" class="bot">
+        <h1>produkty</h1>
+        <h4>laky, krémy...</h4>
     </a>
-
-    <!-- Продукты -->
-    <a href="#" class="cont produkty">
-        <h3>PRODUKTY-h3</h3>
-    </a>
-
 </body>
 </html>
