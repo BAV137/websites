@@ -3,80 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nehtový Specialista</title>
+    <title>tab-header</title>
+</head>
     <style>
+        * {
+            background-color: gray;
+            margin: 0;
+        }
+
         html {
-            background-color: rgb(100, 100, 100);
+            background-color: aliceblue;
         }
 
         body {
-            background-color: rgb(50, 150, 200);
-            margin: 0;
-            height: 100dvh;
-            width: 100vw;
+            background-color: rgb(148, 229, 231);
+
             display: flex;
-            flex-direction: column;
+
+            height: 100dvh;
             justify-content: space-between;
             align-items: center;
+            flex-direction: column;
         }
 
-        /* Общий стиль для всех ссылок-контейнеров */
         a {
-            text-decoration: none; /* Убираем подчеркивание */
-            color: inherit; /* Цвет текста наследуется */
-            display: flex; /* Контейнер становится блочным */
-            flex-direction: column;
+            background-color: greenyellow;
+
+            display: flex;
+
+            height: 35dvh;
+            width: 100dvw;
             justify-content: center;
             align-items: center;
-            width: 60%;
-            height: 30vh;
-            border-radius: 10px; /* Скругление краев */
+            flex-direction: column;
+
+            text-decoration: none;
             transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
-        }
-
-        /* Индивидуальные стили для разных блоков */
-        .top {
-            background-color: greenyellow;
-        }
-
-        .logo {
-            background-color: gold;
-        }
-
-        .bot {
-            background-color: lightcoral;
         }
 
         /* Эффекты при наведении */
         a:hover {
-            transform: scale(1.05); /* Увеличение контейнера */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+            transform: scale(1.1); /* Увеличение контейнера */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Легкая тень */
+            border-radius: 0;
         }
 
-        /* Текст */
-        h1, h3, h4 {
-            margin: 0;
-            text-align: center;
+        .top {
+            border-radius: 0 0 150px 150px;
+        }
+
+        .bot {
+            border-radius: 50px 50px 0 0;
+        }
+
+        h1, h5 {
+            background-color: greenyellow;
         }
     </style>
-</head>
 <body>
-    <!-- Верхняя кнопка -->
-    <a href="https://bumpix.net/alla" class="top">
-        <h1>služby</h1>
-        <h4>nabídka, rezervace termínu...</h4>
+    <a href="#" class="top">
+        <h1>container 1</h1>
+        <h5>весь контейнер кнопка</h5>
     </a>
-
-    <!-- Центральный блок -->
-    <a href="#" class="logo">
-        <h1>Bystrová</h1>
-        <h3>nehtový specialista</h3>
-    </a>
-    
-    <!-- Нижняя кнопка -->
     <a href="#" class="bot">
-        <h1>produkty</h1>
-        <h4>laky, krémy...</h4>
+        <h1>container 2</h1>
+        <h5>весь контейнер кнопка</h5>
     </a>
 </body>
 </html>
