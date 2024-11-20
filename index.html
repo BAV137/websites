@@ -3,71 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tab-header</title>
-</head>
+    <title>Nehtový Specialista</title>
     <style>
         * {
-            background-color: gray;
             margin: 0;
         }
 
         html {
-            background-color: aliceblue;
+            background-image: url(./static/image/logo-360x640p.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         body {
-            background-color: rgb(148, 229, 231);
+            height: 100dvh;
+            width: 100dvw;
 
             display: flex;
-
-            height: 100dvh;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            flex-direction: column;
+
         }
 
         a {
-            background-color: greenyellow;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+
+            height: 30dvh;
+            width: 100dvw;
 
             display: flex;
-
-            height: 35dvh;
-            width: 100dvw;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
 
-            text-decoration: none;
-            transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+            /* Кнопочный стиль */
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10dvh;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
+            background: rgba(156, 224, 46, 0.7); /* Полупрозрачный фон */
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
 
-        /* Эффекты при наведении */
-        a:hover {
-            transform: scale(1.1); /* Увеличение контейнера */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Легкая тень */
-            border-radius: 0;
+        a:active {
+            transform: scale(0.97);
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.1);
+            background: rgba(156, 224, 46, 0.9); /* Уменьшение прозрачности при нажатии */
         }
 
         .top {
-            border-radius: 0 0 150px 150px;
+            background: rgba(54, 198, 32, 0.4); /* Прозрачный зелёный */
         }
 
         .bot {
-            border-radius: 50px 50px 0 0;
+            background: rgba(144, 186, 27, 0.4); /* Прозрачный светло-зелёный */
         }
 
-        h1, h5 {
-            background-color: greenyellow;
+        h1 {
+            text-transform: uppercase;
         }
+
     </style>
+</head>
 <body>
     <a href="#" class="top">
-        <h1>container 1</h1>
-        <h5>весь контейнер кнопка</h5>
+        <h1>služby</h1>
+        <h4>(nabídka, rezervace termínu...)</h4>
     </a>
+
     <a href="#" class="bot">
-        <h1>container 2</h1>
-        <h5>весь контейнер кнопка</h5>
+        <h1>produkty</h1>
+        <h4>(laky, krémy...)</h4>
     </a>
 </body>
 </html>
