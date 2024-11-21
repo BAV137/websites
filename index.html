@@ -19,33 +19,36 @@
 
             width: 100dvw;
             height: 100dvh;
+            
+            display: flex;
+            align-items: center;
+        }
+
+        div {
+            background-color: aquamarine;
+
+            width: 100dvw;
+            height: 50dvh;
 
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        div {
+        img {
             background-color: white;
 
             width: 100%;
-            height: 50%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background-image: url(./static/image/logo-bgs-contain.webp);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+            height: 100%;
+            
+            object-fit: contain;
         }
 
     </style>
 </head>
 <body>
     <div>
-        
+        <img src="./static/image/logo-bgs-contain.webp" alt="logo">
     </div>
 
 </body>
