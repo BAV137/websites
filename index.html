@@ -3,80 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nehtový Specialista</title>
+    <title>Document</title>
     <style>
         * {
+            background-color: gray;
             margin: 0;
         }
 
         html {
-            background-image: url(./static/image/logo-360x640p.webp);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: aqua;
         }
 
         body {
-            height: 100dvh;
+            background-color: burlywood;
+
             width: 100dvw;
+            height: 100dvh;
 
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-
         }
 
-        a {
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
+        div {
+            background-color: white;
 
-            height: 30dvh;
-            width: 100dvw;
+            width: 100%;
+            height: 50%;
 
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            /* Кнопочный стиль */
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            border-radius: 10dvh;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
-            background: rgba(156, 224, 46, 0.7); /* Полупрозрачный фон */
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-        }
-
-        a:active {
-            transform: scale(0.97);
-            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.1);
-            background: rgba(156, 224, 46, 0.9); /* Уменьшение прозрачности при нажатии */
-        }
-
-        .top {
-            background: rgba(54, 198, 32, 0.4); /* Прозрачный зелёный */
-        }
-
-        .bot {
-            background: rgba(144, 186, 27, 0.4); /* Прозрачный светло-зелёный */
-        }
-
-        h1 {
-            text-transform: uppercase;
+            background-image: url(./static/image/logo-bgs-contain.webp);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
     </style>
 </head>
 <body>
-    <a href="#" class="top">
-        <h1>služby</h1>
-        <h4>(nabídka, rezervace termínu...)</h4>
-    </a>
+    <div>
+        
+    </div>
 
-    <a href="#" class="bot">
-        <h1>produkty</h1>
-        <h4>(laky, krémy...)</h4>
-    </a>
 </body>
 </html>
