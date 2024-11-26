@@ -4,15 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nehtový Specialista</title>
-    <link rel="stylesheet" href="./static/styles/index.css">
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: black;
+        }
+
+        body {
+            background-color: white;
+
+            width: 100dvw;
+            height: 100dvh;
+        }
+
+        .logo {
+            background-color: white;
+
+            z-index: 0;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100%;
+            height: 56%;
+            
+            background-image: url(./static/images/logo-2560x1440p.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .lang {
+            background-color: white;
+
+            z-index: 1;
+
+            position: absolute;
+            top: 17%;
+
+            width: 10%;
+            height: 10%;
+
+            background-image: url(./static/images/flag-britain.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .cont {
+            background-color: red;
+
+            z-index: 1;
+
+            position: absolute;
+            top: 65%;
+            right: 5%;
+
+            width: 30%;
+            height: 15%;
+
+            border-radius: 40px;
+
+            background: radial-gradient(circle, #d9f9e2, #70260f);
+            box-shadow: 
+                inset 0 0 35px 10px rgba(0, 0, 0, 0.5),
+                0 5px 25px rgb(0, 0, 0);
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            text-transform: uppercase;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div class="main">
-        <a href="#" class="butt navi sluzby">služby</a>
-        <a href="#" class="butt logo"></a>
-        <a href="#" class="butt navi produkty">produkty</a>
 
+    <div class="logo">
+            <a href="#" class="lang"></a>
+            <a href="#" class="cont">contanct</a>
     </div>
 
+
+    
 </body>
 </html>
